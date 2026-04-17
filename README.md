@@ -3,6 +3,7 @@
 **The zero-install Windows directory scanner built for LLM workflows.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/github/v/release/DrDiabelsBafian/Arborescence_Explorer)](https://github.com/DrDiabelsBafian/Arborescence_Explorer/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](https://github.com/DrDiabelsBafian/Arborescence_Explorer/releases)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE.svg)](https://docs.microsoft.com/en-us/powershell/)
 
@@ -110,7 +111,7 @@ For video/audio metadata (duration, resolution, codec), install FFprobe:
 
 ## Contributing
 
-Pull requests welcome. For major changes, please open an issue first.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Pull requests welcome.
 
 ## License
 

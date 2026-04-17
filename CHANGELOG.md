@@ -1,6 +1,6 @@
 # Changelog
 
-## v5.0 — GitHub Edition (April 2026)
+## v5.0.0 — GitHub Edition (April 2026)
 
 ### Added
 - **Token estimation** — Local calculation (characters / 4) displayed in real-time after each scan

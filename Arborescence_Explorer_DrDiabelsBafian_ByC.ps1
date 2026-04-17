@@ -1,5 +1,5 @@
 # ====================================================================
-# SCRIPT : Arborescence Explorer v5.0 - GitHub Edition
+# SCRIPT : Arborescence Explorer v5.0.0 - GitHub Edition
 # AUTEUR : Claude pour Fabian (Dr. Diabels Bafian)
 # USAGE  : Double-cliquer sur Arborescence_Explorer.bat
 # REPO   : github.com/DrDiabelsBafian/Arborescence_Explorer
@@ -345,7 +345,7 @@ function Export-Markdown {
 
     $md += ""
     $md += "---"
-    $md += "*Genere par [Arborescence Explorer](https://github.com/DrDiabelsBafian/Arborescence_Explorer) v5.0*"
+    $md += "*Genere par [Arborescence Explorer](https://github.com/DrDiabelsBafian/Arborescence_Explorer) v5.0.0*"
 
     ($md -join "`r`n") | Out-File -FilePath $OutputFile -Encoding UTF8
 }
@@ -360,7 +360,7 @@ $formHeight = [math]::Min(780, [int]($screenHeight * 0.88))
 $formWidth = [math]::Min(700, [int]($screenWidth * 0.95))
 
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Arborescence Explorer v5.0 - by Dr. Diabels Bafian"
+$form.Text = "Arborescence Explorer v5.0.0 - by Dr. Diabels Bafian"
 $form.Size = New-Object System.Drawing.Size($formWidth, $formHeight)
 $form.MinimumSize = New-Object System.Drawing.Size(650, 550)
 $form.StartPosition = "CenterScreen"
@@ -396,7 +396,7 @@ $currentY += 28
 $lblSubtitle = New-Object System.Windows.Forms.Label
 $lblSubtitle.Location = New-Object System.Drawing.Point(22, $currentY)
 $lblSubtitle.Size = New-Object System.Drawing.Size(400, 15)
-$lblSubtitle.Text = "v5.0 by Dr. Diabels Bafian | LLM-ready directory scanner"
+$lblSubtitle.Text = "v5.0.0 by Dr. Diabels Bafian | LLM-ready directory scanner"
 $lblSubtitle.Font = New-Object System.Drawing.Font("Segoe UI", 8, [System.Drawing.FontStyle]::Italic)
 $lblSubtitle.ForeColor = $colorGray
 $form.Controls.Add($lblSubtitle)
