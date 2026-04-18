@@ -21,6 +21,7 @@ You need to feed a directory structure to Claude, ChatGPT, or Gemini. You don't 
 |---|:---:|:---:|:---:|:---:|
 | GUI (no CLI needed) | **Yes** | No | Tauri app | No |
 | Zero install (portable EXE) | **Yes** | npm required | pip/brew | Built-in |
+| Multi-language GUI (EN/FR) | **Yes** | No | No | No |
 | Token estimation | **Yes** | Yes | No | No |
 | LLM context compatibility | **Yes** | Yes | No | No |
 | File metadata (size, dates) | **Yes** | No | No | No |
@@ -31,9 +32,9 @@ You need to feed a directory structure to Claude, ChatGPT, or Gemini. You don't 
 
 ## Features
 
-**Core** — Recursive directory scanning with real-time progress. Folders only or folders + files. Configurable max depth. Smart exclusion list (.git, node_modules, __pycache__, .vscode, dist, .cache, and more).
+**Core** — Recursive directory scanning with real-time progress. Folders only or folders + files. Configurable max depth. Smart exclusion list (.git, node_modules, __pycache__, .vscode, dist, .cache, and more). **English/French GUI** with instant language switching.
 
-**LLM-ready exports** — TXT (raw, paste directly into any LLM) and Markdown (with metadata table, token count, and context window compatibility chart for Claude 200k, GPT-4o 128k, GPT-4 8k, Gemini 1M).
+**LLM-ready exports** — TXT (raw, paste directly into any LLM) and Markdown (with metadata table, token count, and context window compatibility chart for Claude 200k, GPT-4o 128k, GPT-4 8k, Gemini 1M). Export content follows your selected language.
 
 **Token estimation** — Local calculation (characters / 4), displayed in real-time after each scan. Shows compatibility status for major LLMs: OK, LIMIT, or EXCEEDED.
 
@@ -42,6 +43,8 @@ You need to feed a directory structure to Claude, ChatGPT, or Gemini. You don't 
 **Media analysis** — Optional FFprobe integration for video/audio files (duration, resolution, codec, bitrate). Greyed out if FFprobe is not installed. Zero forced dependencies.
 
 **Export options** — Save to Downloads, beside the scanned folder, inside it, or choose manually. Auto-versioning (V1, V2...) prevents overwrites. Clipboard copy available.
+
+**Keyboard shortcuts** — Press Enter to launch scan. Drag & drop folders directly onto the window.
 
 ## Download
 
@@ -90,7 +93,7 @@ ps2exe -InputFile Arborescence_Explorer_DrDiabelsBafian_ByC.ps1 `
        -NoConsole `
        -Title "Arborescence Explorer" `
        -Company "DrDiabelsBafian" `
-       -Version "5.0.0"
+       -Version "6.0.0"
 ```
 
 ## Optional: FFprobe

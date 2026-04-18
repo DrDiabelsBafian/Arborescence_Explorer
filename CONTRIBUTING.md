@@ -23,7 +23,20 @@ Use prefixed commit messages:
 - PowerShell: `Verb-Noun` function names (PascalCase)
 - ASCII only in strings and comments (no accents in code)
 - All `.NET` method calls returning values must be prefixed with `[void]` (ps2exe compatibility)
+- All user-facing strings must use `Get-Str 'KeyName'` — never hardcode text in GUI or export logic
 - Test the GUI after any change: `.\Arborescence_Explorer_DrDiabelsBafian.bat`
+
+## Internationalization (i18n)
+
+The GUI supports English and French via a language hashtable system (`$script:Strings`).
+
+When adding or modifying user-facing text:
+
+1. Add a new key to **both** `EN` and `FR` blocks in `$script:Strings`
+2. Use `Get-Str 'YourKey'` everywhere — GUI labels, export content, status messages, error messages
+3. If the string uses format placeholders (`{0}`, `{1}`), call it as `(Get-Str 'YourKey') -f $value1, $value2`
+4. If the string is a GUI control label, add it to the `$cboLang.Add_SelectedIndexChanged` handler for live switching
+5. Test in both EN and FR before submitting
 
 ## Bug reports
 

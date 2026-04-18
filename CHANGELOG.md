@@ -1,5 +1,20 @@
 # Changelog
 
+## v6.0.0 — International Edition (April 2026)
+
+### Added
+- **EN/FR language selector** — Dropdown at top-right, switches all GUI text instantly. English default for international audience
+- **Drag & drop hint** — Visual label "or drag & drop a folder here" below source field
+- **GitHub link** — Clickable repo link at bottom of the window
+- **Enter key shortcut** — Press Enter to launch scan (when not focused on a text field)
+
+### Changed
+- All GUI labels internationalized via language hashtable system (70+ strings per language)
+- Export content (TXT, Markdown) follows selected language
+- File size units adapt to language (B/KB/MB/GB in EN, o/Ko/Mo/Go in FR)
+- Form height slightly increased to accommodate new elements
+- Version bumped to v6.0.0
+
 ## v5.0.0 — GitHub Edition (April 2026)
 
 ### Added
